@@ -1,0 +1,118 @@
+@border_width:8vw;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+html,
+body {
+    color: white;
+    font-family: "Microsoft YaHei,sans-serif";
+}
+
+
+#body {
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://aesccdn.creatby.com/materials/170616/origin/0c1cf3fe752aa5c4fed2989e290fb011_origin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: background_change;
+    animation-duration: 2s;
+    transform: scale(1,1);
+
+    .middle {
+        position: absolute;
+        height: 100vh;
+        width: 100vw - 2 * @border_width;
+        left: @border_width;
+
+        header {
+            height: 16vh;
+            display: flex;
+            justify-content: space-around;
+            li.name{
+                padding-top: 1.8vh;
+                text-align: center;
+                width: 12vw;
+                font-size: 3vw;
+
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            div{
+                text-align: center;
+                font-size: 1.4vw;
+                padding: 5vh;
+                flex: 1;
+            }
+            
+        }
+
+        #content{
+            
+        }
+
+        footer{
+            position: absolute;
+            bottom: 2.5vh;
+            right: 2vw;
+            font-size: 1vw;
+        }
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        height: 100vh;
+        width: @border_width;
+
+        .line {
+            position: absolute;
+            width: 0.1vh;
+            height: 100vh;
+            right: 0;
+            background-color: rgb(207, 193, 193);
+            background-clip: content-box;
+        }
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        height: 100vh;
+        width: @border_width;
+        right: 0;
+
+        .line {
+            position: absolute;
+            width: 0.1vh;
+            height: 100vh;
+            left: 0;
+            background-color: rgb(207, 193, 193);
+            background-clip: content-box;
+        }
+        .mouse_tip{
+            position: absolute;
+            bottom: 4.5vh;
+            width: @border_width;
+            text-align: center;
+            font-size: 1vw;
+            img{
+                width: 6vw;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+html,
+body {
+  color: white;
+  font-family: "Microsoft YaHei,sans-serif";
+}
+#body {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://aesccdn.creatby.com/materials/170616/origin/0c1cf3fe752aa5c4fed2989e290fb011_origin.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: background_change;
+  animation-duration: 2s;
+  transform: scale(1, 1);
+}
+#body .middle {
+  position: absolute;
+  height: 100vh;
+  width: 84vw;
+  left: 8vw;
+}
+#body .middle header {
+  height: 16vh;
+  display: flex;
+  justify-content: space-around;
+}
+#body .middle header li.name {
+  padding-top: 1.8vh;
+  text-align: center;
+  width: 12vw;
+  font-size: 3vw;
+}
+#body .middle header li.name p {
+  font-size: 1.5vw;
+}
+#body .middle header div {
+  text-align: center;
+  font-size: 1.4vw;
+  padding: 5vh;
+  flex: 1;
+}
+#body .middle footer {
+  position: absolute;
+  bottom: 2.5vh;
+  right: 2vw;
+  font-size: 1vw;
+}
+#body .left {
+  display: inline-block;
+  position: absolute;
+  height: 100vh;
+  width: 8vw;
+}
+#body .left .line {
+  position: absolute;
+  width: 0.1vh;
+  height: 100vh;
+  right: 0;
+  background-color: #cfc1c1;
+  background-clip: content-box;
+}
+#body .right {
+  display: inline-block;
+  position: absolute;
+  height: 100vh;
+  width: 8vw;
+  right: 0;
+}
+#body .right .line {
+  position: absolute;
+  width: 0.1vh;
+  height: 100vh;
+  left: 0;
+  background-color: #cfc1c1;
+  background-clip: content-box;
+}
+#body .right .mouse_tip {
+  position: absolute;
+  bottom: 4.5vh;
+  width: 8vw;
+  text-align: center;
+  font-size: 1vw;
+}
+#body .right .mouse_tip img {
+  width: 6vw;
+}

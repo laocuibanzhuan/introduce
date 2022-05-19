@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@keyframes school{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes title{
+    0%{
+        top: 0;
+        right: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#body {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aquamarine; */
+    position: relative;
+    color: rgb(109, 95, 77);
+}
+
+#body .school{
+    position: relative;
+    width: 100%;
+    height: 52vh;
+    background-image: url(../picture/科技大学2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: bottom;
+    
+}
+
+#body .school .badge{
+    position: absolute;
+    top: 9vh;
+    left: 35vw;
+    animation-name: school;
+    animation-duration: 2s;
+}
+#body .school .badge img{
+    width: 10vh;
+    height: 10vh;
+    opacity: .8;
+    
+}
+#body .school .introduce{
+    position: absolute;
+    top: 10vh;
+    left: 42vw;
+    font-size: 6vh;
+    font-weight: 800;
+    animation-name: school;
+    animation-duration: 2s;
+}
+#body .school .more{
+    position: absolute;
+    top: 26vh;
+    left: 46vw;
+    animation-name: school;
+    animation-duration: 1.5s; 
+}
+#body .school .more a{
+    padding: 0 2vh;
+    border: 0.2vh solid rgb(48, 118, 128);
+    border-radius: 20%;
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+#body .school .other{
+    position: absolute;
+    top: 53vh;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: space-around;
+}
+#body .school .other div{
+    position: relative;
+    width: 49%;
+    height: 60vh;
+    background-color: red;
+}
+#body .school .other div p{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 8vh;
+    color: aliceblue;
+    animation-name: title;
+    animation-duration: 2s;
+}
+#body .school .other div img{
+    width: 100%;
+    height: 100% ;
+}
+
+
+
+.major{
+    position: absolute;
+    top: 114vh;
+    width: 100%;
+    height: 48vh;
+    /* background-color: red; */
+    color: rgb(6, 6, 7);
+    
+}
+.major h1{
+    text-align: center;
+    font-size: 8vh;
+}
+.major p{
+    text-align: center;
+    font-size: 4vh;
+}
+.major .show{
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.major .show li{
+    list-style: none;
+}
+
+.major .show li img{
+    width: 8vw;
+    height: 8vw;
+}
+.major footer{
+    text-align: center;
+    font-size: 3vh;
+}
+.major footer a{
+    color: rgb(6, 6, 7);
+    text-decoration: none;
+    
+}
