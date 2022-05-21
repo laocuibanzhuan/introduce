@@ -5,10 +5,11 @@ console.log(body);
 window.addEventListener('mousewheel',function(e){
     if (e.deltaY>0) {
         body.style.backgroundImage = 'none'
-        body.style.backgroundColor = 'red'
+        //开发中
+        // body.style.backgroundColor = 'red'
     }
     else{
         body.style.backgroundImage = 'none'
-        body.style.backgroundColor = 'blue'
+        // body.style.backgroundColor = 'blue'
     }
 })
